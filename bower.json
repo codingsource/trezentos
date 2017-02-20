@@ -1,0 +1,32 @@
+{
+  "name": "projeto_base_estatico",
+  "description": "Dependencias do projeto estático",
+  "main": "index.html",
+  "authors": [
+    "PeterThomas"
+  ],
+  "license": "UNLICENSED",
+  "keywords": [
+    "Jekyll",
+    "Compass",
+    "Sass",
+    "Gulp",
+    "Browser-Sync",
+    "Bower",
+    "NodeJs"
+  ],
+  "homepage": "/",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "^3.3.1",
+    "jquery": "^2.2.2",
+    "bootstrap-sass": "^3.3.7"
+  }
+}

@@ -1,0 +1,21 @@
+{
+	"title": "",
+	"version": "0.0.0",
+	"timestamp": "",
+	"user": "",
+	"description": "",
+	"http_path": "/",
+	"css_dir": "Repositorio/dist/css",
+	"sass": "assets/_sass",
+	"fonts_dir": "assets/_fonts",
+	"javascripts_dir": "assets/_js",
+	"images_dir": "Repositorio/dist/img",
+	"sprite_load_path": "assets/_img",
+	"dist_dir": "Repositorio/dist",
+	"local_dir": "Local",
+	"assets_dir": "assets",
+	"author": {
+		"name": "",
+		"email": ""
+	}
+}

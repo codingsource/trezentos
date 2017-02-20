@@ -1,0 +1,48 @@
+{
+  "name": "projeto_base_estatico",
+  "version": "1.0.0",
+  "description": "Dependencias do projeto estático",
+  "main": "index.html",
+  "scripts": {
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "Projeto",
+    "Jekyll",
+    "Compass",
+    "Sass",
+    "Gulp",
+    "Browser-Sync",
+    "Bower",
+    "NodeJs"
+  ],
+  "author": "PeterThomas",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "npm-install-package": "^2.1.0"
+  },
+  "devDependencies": {
+    "bower-main": "^0.2.14",
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-install": "^0.6.0",
+    "gulp-jekyll": "0.0.0",
+    "gulp-prompt": "^0.2.0",
+    "gulp-uglify": "^2.0.1",
+    "gulp-uglifyjs": "^0.6.2",
+    "gulp-util": "^3.0.8",
+    "gulp-watch": "^4.3.11",
+    "imagemin-gifsicle": "^4.2.0",
+    "imagemin-jpegtran": "^4.3.2",
+    "imagemin-optipng": "^4.3.0",
+    "npm-install-package": "^2.1.0"
+  }
+}
