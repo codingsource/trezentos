@@ -58,6 +58,11 @@
 /* ------------------------------------------------------------------
 Import css theme
 ------------------------------------------------------------------ */
+@import '_import/cores';
+@import '_import/mixins';
+@import '_import/main';
+@import '_import/header';
+@import '_import/footer';
 
 /* ------------------------------------------------------------------
 General Styles
@@ -71,8 +76,3 @@ $sprite-sprite-dimensions: true;
 }
 @import "../_img/sprite/*.png";
 @include all-sprite-sprites;
-
-//misc settings
-@import '_import/cores';
-@import '_import/mixins';
-@import '_import/main';
