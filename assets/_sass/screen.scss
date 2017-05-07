@@ -5,19 +5,19 @@
  */
 
 // Core variables and mixins
-@import "_import/bootstrap-sass/variables";
-@import "_import/bootstrap-sass/mixins";
+// @import "_import/bootstrap-sass/variables";
+// @import "_import/bootstrap-sass/mixins";
 
 // Reset and dependencies
-@import "_import/bootstrap-sass/normalize";
-@import "_import/bootstrap-sass/print";
-@import "_import/bootstrap-sass/glyphicons";
+// @import "_import/bootstrap-sass/normalize";
+// @import "_import/bootstrap-sass/print";
+// @import "_import/bootstrap-sass/glyphicons";
 
 // Core CSS
-@import "_import/bootstrap-sass/scaffolding";
-@import "_import/bootstrap-sass/type";
-@import "_import/bootstrap-sass/code";
-@import "_import/bootstrap-sass/grid";
+// @import "_import/bootstrap-sass/scaffolding";
+// @import "_import/bootstrap-sass/type";
+// @import "_import/bootstrap-sass/code";
+// @import "_import/bootstrap-sass/grid";
 // @import "_import/bootstrap-sass/tables";
 // @import "_import/bootstrap-sass/forms";
 // @import "_import/bootstrap-sass/buttons";
@@ -52,8 +52,8 @@
 // @import "_import/bootstrap-sass/carousel";
 
 // Utility classes
-@import "_import/bootstrap-sass/utilities";
-@import "_import/bootstrap-sass/responsive-utilities";
+// @import "_import/bootstrap-sass/utilities";
+// @import "_import/bootstrap-sass/responsive-utilities";
 
 /* ------------------------------------------------------------------
 Import css theme
@@ -61,6 +61,7 @@ Import css theme
 @import '_import/cores';
 @import '_import/mixins';
 @import '_import/main';
+@import '../_fonts/fonts';
 @import '_import/header';
 @import '_import/footer';
 
