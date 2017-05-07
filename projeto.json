@@ -1,6 +1,6 @@
 {
-	"title": "",
-	"version": "0.0.0",
+	"title": "Trezentos",
+	"version": "0.0.1",
 	"timestamp": "",
 	"user": "",
 	"description": "",
@@ -15,7 +15,7 @@
 	"local_dir": "Local",
 	"assets_dir": "assets",
 	"author": {
-		"name": "",
-		"email": ""
+		"name": "Peter Thomas",
+		"email": "peterpetrick@gmail.com"
 	}
 }
