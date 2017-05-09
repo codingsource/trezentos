@@ -1,9 +1,89 @@
 --- 
 layout: default 
 permalink: "/" 
-classes: "home" 
+class: "home" 
 ---
+<main class="home content">
+    <div class="container">
+        <section class="row">
+            <div class="oneSection col-md-12">
+                <article class="texto-destaque">
+                    <p class="fz-xs-15 fz-md-38">Imagine que fantástico ter você aqui</p>
+                    <p class="fz-xs-18 fz-md-60">Na equipe 300?</p>
+                </article>
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active">SLIDE 01</li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1">SLIDE 02</li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2">SLIDE 03</li>
+                </ol>
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <div class="col-md-5 col-md-offset-1">
+                            <img src="{{site.baseurl}}Repositorio/dist/img/destaqueBanners.png" alt="Slide Destaque">
+                        </div>
+                        <div class="col-md-5 carousel-caption">
+                            <p>SLIDE INICIAL DE DESTAQUE</p>
+                            <p>Muito bem. Agora falta pouco para você concluir o <strong>teste de desenvolvimento</strong>. Aguardamos ansiosos pelo que está por vir!</p>
+                            <p>Raphael Felicio</p>
+                            <p>Diretor@300</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{site.baseurl}}Repositorio/dist/img/destaqueBanners.png" alt="Slide 2">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="{{site.baseurl}}Repositorio/dist/img/destaqueBanners.png" alt="Slide 3">
+                        <div class="carousel-caption">
+                            ...
+                        </div>
+                    </div>
+                </div>
 
-<main>
-    Static Start Project
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <!--<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>-->
+
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <!--<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>-->
+                </a>
+            </div>
+            </div>
+            
+        </section>
+        <section class="row">
+            <article class="twoSection col-xs-12 col-md-12 mt-md-150">
+                <div class="box-content">
+                    <div class="col-md-10">
+                        <div class="col-md-offset-2 col-md-7">
+                            <h2 class="mt-md-80  fz-md-36">Fique por dentro!</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-10 pt-md-50 emailBtnApp">
+                        <input class="email" type="text" placeholder="Seu e-mail">
+                        <button class="btnEnviar">Enviar</button>
+                        <span class="or">ou</span>
+                        <input type="button" class="btnApp">BAIXE AGORA DE GRAÇA
+                    </div>
+                    <div class="col-xs-12 col-md-10 pt-md-40">
+                        <input type="checkbox"><span>Enviar novidades frequentes!</span>
+                        <select name="email" id="emalContato">
+                            <option value="">raphael@trezentos.com.br</option>
+                            <option value="">teste@trezentos.com.br</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="">
+                    <img class="img-responsive smartphone" src="/Repositorio/dist/img/smartphone.png" alt="Smartphone">
+                </div>
+            </article>
+        </section>
+    </div>
 </main>

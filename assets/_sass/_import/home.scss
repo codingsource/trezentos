@@ -1,0 +1,82 @@
+.home {
+    .oneSection {
+        @include gradient-horizontal(#f5a947, #ee6365, 0%, 100%);
+        padding-top: 150px;
+        .texto-destaque {
+            font-family: $fontGotham;
+            color: $white;
+            text-align: center;
+            margin-bottom: 65px;
+        }
+        .carousel {
+            .carousel-indicators {
+                top: -30px;
+                display: flex;
+                justify-content: space-around;
+                li {
+                    display: inline-block;
+                    width: 225px;
+                    height: 6px;
+                    text-indent: -999px;
+                    -webkit-border-radius: 0;
+                    -moz-border-radius: 0;
+                    border-radius: 0;
+                    cursor: pointer;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .twoSection {
+        background: $azul url(../img/parallax) no-repeat;
+        background-size: cover;
+        background-position: 0px -170px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin-bottom: 124px;
+        -webkit-box-shadow: 0px 150px 10px -10px rgba(0, 0, 0, 0.26);
+        -moz-box-shadow: 0px 150px 10px -10px rgba(0, 0, 0, 0.26);
+        box-shadow: 0px 50px 150px -10px rgba(0, 0, 0, 0.26);
+        .box-content {
+            text-align: center;
+            h2 {
+                font-family: $fontPoppins;
+                font-weight: 700;
+                font-style: normal;
+                color: $white;
+            }
+            p {
+                font-family: $fontGotham;
+                color: $white;
+                font-size: 1.1em;
+            }
+            .emailBtnApp {
+                .email {
+                    color: #5488eb;
+                }
+                .btnEnviar {
+                    -webkit-border-radius: 10px;
+                    -moz-border-radius: 10px;
+                    border-radius: 10px;
+                }
+                .or {
+                    font-family: $fontMontserrat;
+                    color: $white;
+                }
+                .btnApp {
+                    height: 35px;
+                    color: #6B6B6B;
+                    width: 320px;
+                    background-color: #F4F4F4;
+                    background-image: url(../img/apple.png);
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        .smartphone {
+            position: relative;
+            top: -82px;
+        }
+    }
+}

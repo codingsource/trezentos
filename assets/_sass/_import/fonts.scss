@@ -3,25 +3,38 @@ Fonts
 TTF - Para todos os demais navegadores
 EOT - Para Internet Explore
 ------------------------------------------------------------------ */
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Medium.ttf') format('ttf');
+    font-weight: 400;
+    font-style: normal;
+}
 
-$fontCrimson: 'Crimson Text', serif;
-$fontLato: 'Lato', sans-serif;
-$fontTrebuchetMS: 'Trebuchet MS', sans-serif;
-$fontLucidaSansUnicode: 'Lucida Sans Unicode', sans-serif;
-$fontLucidaGrande: 'Lucida Grande', sans-serif;
-$fontLucidaSans: 'Lucida Sans', sans-serif;
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Light.otf') format('otf');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Bold.otf') format('otf');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Gotham';
+    src: url('../fonts/Gotham-Regular.otf') format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+$fontGotham: 'Gotham-Regular', sans-serif;
+$fontGotham: 'Gotham-Light', sans-serif;
+$fontGotham: 'Gotham-Bold', sans-serif;
+$fontMontserrat: 'Montserrat', sans-serif;
+$fontPlayfairDisplay: 'Playfair Display', sans-serif;
+$fontPoppins: 'Poppins', sans-serif;
 $fontRoboto: 'Roboto', sans-serif;
-
-@font-face {
-    font: {
-        family: $fontLucidaSansUnicode, $fontLucidaGrande, $fontLucidaSans;
-        weight: normal;
-    }
-}
-
-@font-face {
-    font: {
-        family: $fontRoboto;
-        weight: normal;
-    }
-}

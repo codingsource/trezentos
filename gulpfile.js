@@ -56,7 +56,7 @@ gulp.task('minify', function () {
             outSourceMap: true
         }))
         .on('error', swallowError)
-        .pipe(gulp.dest(projeto.dist_dir + 'js'));
+        .pipe(gulp.dest(projeto.dist_dir + '/js'));
 });
 
 gulp.task('bower', function () {
@@ -90,7 +90,6 @@ gulp.task('compass', function () {
 });
 
 gulp.task('jekyllBuild', (done) => {
-    // console.log('jekyllBuild')
     bs.notify(messages.jekyllBuild);
     return cp.spawn(jekyll, ['build'], {
         stdio: 'inherit',
@@ -141,6 +140,8 @@ gulp.task('npmInstall', function () {
 });
 
 gulp.task('start', function () {
+    var reload = browserSync.reload;
+    watch = require('gulp-watch');
 
     gulp.start(['compass', 'bower', 'minify', 'imagemin', 'browser-sync']);
 
@@ -153,14 +154,18 @@ gulp.task('start', function () {
     gulp.watch(projeto.sprite_load_path + '/sprite/**/*.png', ['compass']);
 
     gulp.watch([
-        '**.**',
         '*.html',
+        '**/*.html',
         '_layouts/*.html',
         '_includes/*.html',
         '_components/*.md',
         '_elements/*.md',
         '_layout-system/*.md',
-        '_visual/*.md'
+        '_visual/*.md',
+        'Repositorio/dist/js/main.min.js',
+        'Repositorio/dist/img/**/*.*',
+        'Repositorio/dist/js/external.min.js',
+        'Repositorio/dist/css/*.css'
     ], ['jekyll-rebuild']);
 });
 

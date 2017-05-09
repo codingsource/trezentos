@@ -1,3 +1,358 @@
+/* ------------------------------------------------------------------
+Geração de tamanho de container responsive
+Isso so porque não estou usando mediaQuery bootstrap
+------------------------------------------------------------------- */
+
+// $screen-sm-min: 768px;
+// $screen-md-min: 992px;
+// $screen-lg-min: 1200px;
+// $screen-xs-max: 767px;
+// $screen-sm-max: 991px;
+// $screen-md-max: 1199px;
+// @media (max-width: $screen-xs-max) {
+//     .container {
+//         width: auto;
+//     }
+// }
+
+// @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+//     .container {
+//         width: 750px;
+//         max-width: 100%;
+//     }
+// }
+
+// @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
+//     .container {
+//         width: 970px;
+//         max-width: 100%;
+//     }
+// }
+
+// @media (min-width: $screen-lg-min) {
+//     .container {
+//         width: 1170px;
+//         max-width: 100%;
+//     }
+// }
+
+/* ------------------------------------------------------------------
+Geração de tamanho de font & letter-spacing
+------------------------------------------------------------------- */
+
+// .fz-XX define o tamanho da font até 60px
+@for $i from 1 through 100 {
+    .#{fz-xs}-#{$i} {
+        font-size: 0px+ $i;
+    }
+}
+
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through 100 {
+        .#{fz-sm}-#{$i} {
+            font-size: 0px+ $i;
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through 100 {
+        .#{fz-md}-#{$i} {
+            font-size: 0px+ $i;
+        }
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through 100 {
+        .#{fz-lg}-#{$i} {
+            font-size: 0px+ $i;
+        }
+    }
+}
+
+@for $i from 1 through 10 {
+    .#{ls}-#{$i} {
+        letter-spacing: 0px+ $i;
+    }
+}
+
+
+/* ------------------------------------------------------------------
+ Geração de Margin e Padding
+------------------------------------------------------------------- */
+
+@mixin make-padding($class, $i) {
+    .pd-#{$class}-#{$i * 5} {
+        padding: 0px + $i * 5;
+    }
+}
+
+@mixin make-padding-right($class, $i) {
+    .pr-#{$class}-#{$i * 5} {
+        padding-right: 0px + $i * 5;
+    }
+}
+
+@mixin make-padding-top($class, $i) {
+    .pt-#{$class}-#{$i * 5} {
+        padding-top: 0px + $i * 5;
+    }
+}
+
+@mixin make-padding-bottom($class, $i) {
+    .pb-#{$class}-#{$i * 5} {
+        padding-bottom: 0px + $i * 5;
+    }
+}
+
+@mixin make-padding-left($class, $i) {
+    .pl-#{$class}-#{$i * 5} {
+        padding-left: 0px + $i * 5;
+    }
+}
+
+@mixin make-margin-top($class, $i) {
+    .mt-#{$class}-#{$i * 5} {
+        margin-top: 0px + $i * 5;
+    }
+}
+
+@mixin make-margin-bottom($class, $i) {
+    .mb-#{$class}-#{$i * 5} {
+        margin-bottom: 0px + $i * 5;
+    }
+}
+
+@mixin make-margin-left($class, $i) {
+    .ml-#{$class}-#{$i * 5} {
+        margin-left: 0px + $i * 5;
+    }
+}
+
+@mixin make-margin-right($class, $i) {
+    .mr-#{$class}-#{$i * 5} {
+        margin-right: 0px + $i * 5;
+    }
+}
+
+
+/* ------------------------------------------------------------------
+ Margin
+------------------------------------------------------------------- */
+
+//.mb-SZ-XX define o tamanho do margin-bottom de 5 em 5px até 200px
+@for $i from 1 through 40 {
+    @include make-margin-bottom(xs, $i);
+}
+
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through 40 {
+        @include make-margin-bottom(sm, $i);
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through 40 {
+        @include make-margin-bottom(md, $i);
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through 40 {
+        @include make-margin-bottom(lg, $i);
+    }
+}
+
+//.mt-SZ-XX define o tamanho do margin-top de 5 em 5px até 200px
+@for $i from 1 through 200 {
+    @include make-margin-top(xs, $i);
+}
+
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through 200 {
+        @include make-margin-top(sm, $i);
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through 200 {
+        @include make-margin-top(md, $i);
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through 200 {
+        @include make-margin-top(lg, $i);
+    }
+}
+
+//.mt-SZ-XX define o tamanho do margin-left de 5 em 5px até 200px
+@for $i from 1 through 40 {
+    @include make-margin-left(xs, $i);
+}
+
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through 40 {
+        @include make-margin-left(sm, $i);
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through 40 {
+        @include make-margin-left(md, $i);
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through 40 {
+         @include make-margin-left(lg, $i);
+    }
+}
+
+//.mt-SZ-XX define o tamanho do margin-right de 5 em 5px até 200px
+@for $i from 1 through 40 {
+    @include make-margin-right(xs, $i);
+}
+
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through 40 {
+        @include make-margin-right(sm, $i);
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through 40 {
+        @include make-margin-right(md, $i);
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through 40 {
+        @include make-margin-right(lg, $i);
+    }
+}
+
+
+// /* ------------------------------------------------------------------
+//  Padding
+// ------------------------------------------------------------------- */
+
+//.pl-SZ-XX define o tamanho do padding-left de 5 em 5px até 200px
+@for $i from 1 through 40 {
+    @include make-padding-left(xs, $i);
+}
+
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-left(sm, $i);
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-left(md, $i);
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-left(lg, $i);
+    }
+}
+
+//.pb-SZ-XX define o tamanho do padding-bottom de 5 em 5px até 200px
+@for $i from 1 through 40 {
+    @include make-padding-bottom(xs, $i);
+}
+
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-bottom(sm, $i);
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-bottom(md, $i);
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-bottom(lg, $i);
+    }
+}
+
+//.pr-SZ-XX define o tamanho do padding-right de 5 em 5px até 200px
+@for $i from 1 through 40 {
+    @include make-padding-right(xs, $i);
+}
+
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-right(sm, $i);
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-right(md, $i);
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-right(lg, $i);
+    }
+}
+
+//.pt-SZ-XX define o tamanho do padding-top de 5 em 5px até 200px
+@for $i from 1 through 40 {
+    @include make-padding-top(xs, $i);
+}
+
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-top(sm, $i);
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-top(md, $i);
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through 40 {
+        @include make-padding-top(lg, $i);
+    }
+}
+
+//.pt-SZ-XX define o tamanho do padding de 5 em 5px até 200px
+@for $i from 1 through 40 {
+    @include make-padding(xs, $i);
+}
+
+@media (min-width: $screen-sm-min) {
+    @for $i from 1 through 40 {
+        @include make-padding(sm, $i);
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    @for $i from 1 through 40 {
+        @include make-padding(md, $i);
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    @for $i from 1 through 40 {
+        @include make-padding(lg, $i);
+    }
+}
+
 // HARDWARE - PARA ANIMACÃO E ACELERACÃO DE HARDWARE
 @mixin hardware($backface: true, $perspective: 1000) {
     @if $backface {
@@ -69,8 +424,8 @@
 
 //ESTILOS DE FONTE
 // &lt;/pre&gt;
-@mixin font-source-sans($size: false, $colour: false, $weight: false, $lh: false) {
-    font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+@mixin fontGotham($size: false, $colour: false, $weight: false, $lh: false) {
+    font-family: 'Gotham-Medium', Helvetica, Arial, sans-serif;
     @if $size {
         font-size: $size;
     }
@@ -151,14 +506,29 @@ $z-indexes: ( "outdated-browser", "modal", "header", "page-wrapper", "page", "co
 //     z-index: z('header');
 // }
 // GRADIENT
-// @mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {
-//     background-image: -webkit-linear-gradient(right, $start-color $start-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
-//     background-image: -o-linear-gradient(right, $start-color $start-percent, $end-color $end-percent); // Opera 12
-//     background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
-//     background-repeat: repeat-x;
-//     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
-// }
-@mixin gradient-horizontal($from, $to) {
+@mixin gradient-top-bottom($cor1, $cor2) {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#545454+0,494949+100 */
+    background: $cor1;
+    /* Old browsers */
+    background: -moz-linear-gradient(top, $cor1 0%, $cor2 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, $cor1 0%, $cor2 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, $cor1 0%, $cor2 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$cor1', endColorstr='$cor2', GradientType=0);
+    /* IE6-9 */
+}
+
+@mixin gradient-horizontal($start-color, $end-color, $start-percent: 0%, $end-percent: 100%) {
+    background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+    background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Opera 12
+    background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
+}
+
+@mixin gradient-t-b($from, $to) {
     /* fallback/image non-cover color */
     background-color: $from;
     /* Firefox 3.6+ */
@@ -170,11 +540,13 @@ $z-indexes: ( "outdated-browser", "modal", "header", "page-wrapper", "page", "co
     /* Opera 11.10+ */
     background-image: -o-linear-gradient($from, $to);
 }
-// USAGE
-// .my_div {
-//   @include gradient($background_color, white);
-// }
 
+// Falta passar o rgba
+// @mixin box-shadow($hLenght, $vLenght, $bRadius, $sRadius) {
+//     -webkit-box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.26);
+//     -moz-box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.26);
+//     box-shadow: 0px 3px 3px -1px rgba(0, 0, 0, 0.26);
+// }
 //ESQUERDA
 .pull-right {
     float: right;
@@ -186,36 +558,28 @@ $z-indexes: ( "outdated-browser", "modal", "header", "page-wrapper", "page", "co
 }
 
 // CENTRO
-@mixin push--auto {
+@mixin push--auto() {
     margin: {
         left: auto;
         right: auto;
     }
 }
 
-// USAGE
-// .logo {
-//      @include push--auto;
-// }
+// LIMPA A PROPRIEDADE
 @mixin clearfix() {
     &:before,
     &:after {
         content: " ";
         display: table;
     }
-    &::after {
+    &:after {
         clear: both;
     }
 }
 
-//USAGE
-// .article {
-//     @include clearfix();
-// }
 .center-block {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include push--auto();
 }
 
 .show {
